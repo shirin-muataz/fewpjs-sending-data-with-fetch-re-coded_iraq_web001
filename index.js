@@ -8,8 +8,8 @@ function submitData (userName, userEmail)
     "Accept": "application/json"
   },
   body: JSON.stringify({
-    name: userName,
-    emai:userEmail
+    name: `${userName}`,
+    emai:`${userEmail}`
   })
 };
   return (fetch('http://localhost:3000/users'),configObj)
